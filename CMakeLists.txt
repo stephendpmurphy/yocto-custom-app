@@ -20,3 +20,6 @@ add_executable(${TARGET_NAME} ${SOURCES})
 
 # Add an additional property that will delete compile binaires on a "clean" command
 set_property(DIRECTORY APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES "output")
+
+# Add an install instruction
+install(TARGETS ${TARGET_NAME} DESTINATION bin)
