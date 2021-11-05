@@ -22,4 +22,4 @@ add_executable(${TARGET_NAME} ${SOURCES})
 set_property(DIRECTORY APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES "output")
 
 # Add an install instruction
-install(TARGETS ${TARGET_NAME} DESTINATION bin)
+install(TARGETS yocto_test_app RUNTIME DESTINATION bin)
